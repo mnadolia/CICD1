@@ -82,6 +82,15 @@
 </dependency>
 
 
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.13.0</version>
+</dependency>
+
+
+
   </dependencies>
 
 <profiles>
@@ -184,7 +193,15 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
 
-
+ <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Update to 3.8.1 or later -->
+            <configuration>
+                <source>1.8</source> <!-- Java 8 or later -->
+                <target>1.8</target> <!-- Java 8 or later -->
+            </configuration>
+ </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -210,7 +227,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>3.13.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
