@@ -12,11 +12,13 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
+
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+</properties>
+
 
 
 
@@ -198,8 +200,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version> <!-- Update to 3.8.1 or later -->
             <configuration>
-                <source>1.8</source> <!-- Java 8 or later -->
-                <target>1.8</target> <!-- Java 8 or later -->
+                <source>21</source> <!-- Java 8 or later -->
+                <target>21</target> <!-- Java 8 or later -->
             </configuration>
  </plugin>
 
