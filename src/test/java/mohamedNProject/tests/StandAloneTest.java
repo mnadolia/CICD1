@@ -21,6 +21,9 @@ public class StandAloneTest
 	public static void main(String[] args) 
 	{
 	
+	
+	//New commments are added for CICD1 project...
+	
 		String productName = "ZARA COAT 3";
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
